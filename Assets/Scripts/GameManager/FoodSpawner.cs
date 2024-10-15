@@ -6,6 +6,7 @@ public class FoodSpawner : MonoBehaviour
     public GameObject[] powerUpPrefabs;
     public float spawnInterval = 4f;
     public Vector3 boundsMin, boundsMax;
+    public float padding;
 
     private void Start()
     {
@@ -18,13 +19,13 @@ public class FoodSpawner : MonoBehaviour
 
     void SpawnFood()
     {
-        Vector3 randomPosition = new Vector3(Random.Range(boundsMin.x + 3, boundsMax.x - 3), Random.Range(boundsMin.y + 3, boundsMax.y - 3), 0);
+        Vector3 randomPosition = new Vector3(Random.Range(boundsMin.x + padding, boundsMax.x - padding), Random.Range(boundsMin.y + padding, boundsMax.y - padding), 0);
         Instantiate(foodPrefabs[Random.Range(0, foodPrefabs.Length)], randomPosition, Quaternion.identity);
     }
 
     void SpawnPowerUp()
     {
-        Vector3 randomPosition = new Vector3(Random.Range(boundsMin.x + 3, boundsMax.x - 3), Random.Range(boundsMin.y + 3, boundsMax.y - 3), 0);
+        Vector3 randomPosition = new Vector3(Random.Range(boundsMin.x + padding, boundsMax.x - padding), Random.Range(boundsMin.y + padding, boundsMax.y - padding), 0);
         Instantiate(powerUpPrefabs[Random.Range(0, powerUpPrefabs.Length)], randomPosition, Quaternion.identity);
     }
 }
