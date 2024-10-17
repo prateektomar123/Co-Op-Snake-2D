@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7091642834495938270}
   - component: {fileID: 3086229427322111737}
   m_Layer: 0
-  m_Name: Snake1Segment
+  m_Name: Snake2Segment
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -322108660, guid: 974df3905e7e6469fbdc44536483c78b, type: 3}
+  m_Sprite: {fileID: 422720787, guid: 3e49e29f4ac3343ec8ac95f7f1583e45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
